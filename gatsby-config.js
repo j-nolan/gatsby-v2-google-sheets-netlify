@@ -17,5 +17,13 @@ module.exports = {
       },
     },
     'gatsby-plugin-offline',
+    {
+      resolve: 'gatsby-source-google-sheets',
+      options: {
+        spreadsheetId: 'spreadhsheet id, work it out from its url',
+        worksheetTitle: 'name of the tab to get data from',
+        credentials: require('./credentials.json'),
+      },
+    },
   ],
 }
